@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutZeed</title>
+    <script src="bot.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Poiret+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Righteous&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        header .company h1 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 0px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-kecil {
+            width: 40px;
+            /* Ukuran gambar kecil */
+            height: auto;
+            /* Ukuran gambar kecil */
+            margin-left: 15px;
+            /* Jarak antara teks dan gambar */
+            display: block;
+        }
+
+        .about-section {
+            padding: 70px 0;
+            background-color: #c0d8db;
+            background-size: cover;
+            background-position: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            font-size: 26px;
+            color: #0b0b0c;
+            margin-bottom: 20px;
+            margin-top: 60px;
+            font-family: "Jura", serif;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-image {
+            width: auto;
+            height: 200px;
+            border-radius: 50%;
+            margin: 90px 10px;
+            border-bottom: 8px solid #020202;
+            box-shadow: 0 9px 80px rgba(255, 255, 255, 0.9); /* tambahkan properti box-shadow */
+            animation: animate-text 2s ease-in-out;
+        }
+
+        .about-text {
+            width: 50%;
+            margin: 90px 60px;
+            margin-right: 10px;
+            animation: animate-text 2s ease-in-out;
+
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "Jura", serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .about-text h1 {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "Josefin Sans", serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Section Header ---------------------------------------------------------->
+    <header>
+        <div class="company">
+            <h1>ZeedBaik</h1>
+            <img src="burung.png" alt="Logo Kecil" class="logo-kecil">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#tentang">About</a></li>
+                <li><a href="Home.html#servis">Services</a></li>
+                <li><a href="Home.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section" id="tentang">
+        <h2>Tentang Saya</h2>
+
+        <div class="about-content">
+            <img src="ppbaru1.png" alt="Foto Profil" class="about-image">
+            <div class="about-text">
+                <h1>Hallo Semuanya !</h1>
+                <p>Perkenalkan Saya Zhafif Riezaka, Creator Dari Website ini.</p>
+                <p>"Selamat Datang Di Website saya" Web Ini Dibuat Dengan Tujuan Untuk Memberikan Layanan Dan jasa Untuk
+                    Kalian semuaa.. Dan juga Web ini sebagai Personal Project Bagi saya</p>
+                <p>Saya adalah designer atau bisa dibilang penggemar design grafis yang tertarik pada inovasi interface
+                    di bidang UI/UX Design. saya berkeinginan untuk membuat tampilan web dan menciptakan design yang
+                    tidak hanya menarik tapi juga memiliki nilai fungsi yang tinggi.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
